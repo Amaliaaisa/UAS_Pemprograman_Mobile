@@ -80,3 +80,4 @@ lib/
 ├── main.dart
 └── firebase_options.dart
 
+Link apk: https://github.com/Amaliaaisa/UAS_Pemprograman_Mobile/releases/download/v1.0.0/app-release.apk
