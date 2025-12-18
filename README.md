@@ -1,16 +1,82 @@
-# dailyglow
+# DailyGlow  
+**Aplikasi Catatan Kegiatan Harian Wanita**
 
-A new Flutter project.
+## 📌 Deskripsi Aplikasi
+DailyGlow adalah aplikasi mobile berbasis Flutter yang dirancang khusus untuk membantu perempuan dalam mencatat kegiatan harian, rutinitas perawatan diri, kesehatan, serta siklus menstruasi. Aplikasi ini juga menyediakan fitur catatan pribadi dan kutipan inspiratif harian untuk meningkatkan motivasi pengguna.
 
-## Getting Started
+Aplikasi ini dibuat sebagai **tugas Ujian Akhir Semester (UAS) mata kuliah Pemrograman Mobile**.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🎯 Tujuan Aplikasi
+- Membantu pengguna mengelola kegiatan harian secara terstruktur
+- Menyediakan pencatatan catatan pribadi dan rutinitas kesehatan
+- Mencatat dan memantau siklus menstruasi
+- Memberikan pengalaman UI yang nyaman dan ramah pengguna
+- Menerapkan konsep CRUD, Provider, API, dan penyimpanan lokal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Fitur Utama
+1. **Onboarding**
+   - Tampilan awal pengenalan aplikasi
+
+2. **Dashboard Utama**
+   - Navigasi ke seluruh fitur aplikasi
+
+3. **Catatan (Notes)**
+   - Tambah, edit, hapus catatan (CRUD)
+   - Kategori catatan
+   - Tandai catatan favorit
+
+4. **Kegiatan Mingguan**
+   - Manajemen aktivitas harian dan mingguan
+   - Tandai aktivitas selesai atau belum
+
+5. **Pelacak Menstruasi**
+   - Mencatat tanggal, gejala, dan tingkat aliran
+   - Prediksi siklus berikutnya
+
+6. **Pengaturan**
+   - Mengubah format tanggal
+   - Mengatur hari awal minggu
+   - Mode terang & gelap
+
+7. **Kutipan Harian**
+   - Mengambil data dari API publik
+
+---
+
+## 📂 Struktur Folder Proyek
+lib/
+├── models/
+│ ├── activity_model.dart
+│ ├── menstruation_model.dart
+│ └── note_model.dart
+│
+├── providers/
+│ ├── activity_provider.dart
+│ ├── menstruation_provider.dart
+│ ├── note_provider.dart
+│ └── settings_provider.dart
+│
+├── services/
+│ ├── api_service.dart
+│ ├── calendar_service.dart
+│ └── local_storage_service.dart
+│
+├── views/
+│ └── onboarding/
+│ ├── home/
+│ ├── notes/
+│ ├── menstruation/
+│ ├── weekly/
+│ └── settings/
+│
+├── widgets/
+│ ├── colors.dart
+│ └── dashboard_card.dart
+│
+├── main.dart
+└── firebase_options.dart
+
